@@ -17,14 +17,14 @@ function App() {
 
   const AuthRoute = ({ children }) => {
     if (!currentUser) {
-      return <Navigate to="/login" />;
+      return <Navigate to="/" />;
     }
     return children;
   };
 
   const router = createBrowserRouter([
     {
-      path: "/login",
+      path: "/",
       element: <Login />,
     },
     {
@@ -32,7 +32,7 @@ function App() {
       element: <Register />,
     },
     {
-      path: "/",
+      path: "/home",
       element: (
         <AuthRoute>
           <Home />

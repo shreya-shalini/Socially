@@ -92,7 +92,7 @@ const Register = () => {
       setError(true);
     }
     
-    navigate("/login");
+    navigate("/");
   };
   
   
@@ -153,7 +153,7 @@ const Register = () => {
                 <button type="submit" className="registerButton">
                   Create Account
                 </button>
-                <Link to="/login">
+                <Link to="/">
                   <button className="loginRegisterButton">
                     Log into Account
                   </button>

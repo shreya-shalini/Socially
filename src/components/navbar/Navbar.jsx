@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <div className="navbarContainer">
       <div className="left">
-        <Link to="/" style={{ textDecoration: "none"}}>
+        <Link to="/home" style={{ textDecoration: "none"}}>
           <span className="logo">
           <span>S</span>
           <span>o</span>

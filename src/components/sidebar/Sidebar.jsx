@@ -23,7 +23,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
-      <span onClick={() => navigate("/")}>
+      <span onClick={() => navigate("/home")}>
          <MenuLink Icon={<HomeIcon />} text="Feed" />
          </span>
         <MenuLink Icon={<ChatIcon />} text="Messages" />
