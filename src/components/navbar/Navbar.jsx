@@ -66,10 +66,6 @@ const Navbar = () => {
         </div>
       </div>
       <div className="right">
-        {/* <div className="navbarLinks">
-          <span className="navbarLink">Homepage</span>
-          <span className="navbarLink">Timeline</span>
-        </div> */}
         <div className="navbarIcons">
           <div className="iconItem">
             <PersonIcon />

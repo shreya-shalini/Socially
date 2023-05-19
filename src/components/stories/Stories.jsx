@@ -11,7 +11,6 @@ const Stories = () => {
       <div className="storyCard">
         <div className="overlay"></div>
         <img src={currentUser.photoURL} alt="" className="storyProfile" />
-        {/* <img src="/assets/person/user.jpg" alt="" className="storybackground" /> */}
         <img src="/assets/person/upload.png" alt="" className="storyadd" />
         <span className="text">{currentUser.displayName}</span>
       </div>

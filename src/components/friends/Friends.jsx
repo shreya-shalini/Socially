@@ -61,7 +61,7 @@ const Friends = () => {
           </li>
         ))
       ) : (
-        <p>No users to display</p>
+        <p>No Friends yet!!</p>
       )}
     </div>
   );
