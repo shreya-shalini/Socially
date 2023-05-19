@@ -1,0 +1,61 @@
+.rightbarFriend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+    .rightbarProfileImgContainer{
+        margin-right: 10px;
+        position: relative;
+        flex:6;
+
+        .rightbarProfileImg{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+       
+    }
+    .rightbarUsername{
+        flex:4;
+        font-weight: 500;
+        color: #333;
+        margin-left:-5.5rem;
+    }
+    .addFriendRightbar{
+        flex:2;
+        align-items: end;
+        .addFriendIcon{
+            font-size: 20px;
+            color: gray;
+            cursor: pointer;
+    }
+    .addFriendIcon{
+        color: rgb(40, 119, 29);
+    }
+    .followRightbar{
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        cursor: pointer;
+        margin-top: -0.7rem;
+    }
+    .followRightbar:hover{
+        zoom:110%;
+    }
+    .removeFriendIcon{
+        color: rgb(238, 121, 121);
+    }
+    .unfollowRightbar{
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration:none;
+        cursor: pointer;
+        margin-top: -0.7rem;
+    }
+    .unfollowRightbar:hover{
+        zoom:110%;
+    }
+    }
+    
+}

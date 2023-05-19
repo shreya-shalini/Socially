@@ -1,0 +1,37 @@
+.storyCard{
+    position: relative;
+    flex-basis: 20%;
+    margin: 5px;
+
+    .storyProfile{
+        display: flex;
+        position: absolute;
+        height: 65px;
+        width: 65px;
+        border-radius: 50%;
+        top: 10px;
+        left: 10px;
+        border: 4px solid #8626c3;
+        object-fit: cover;
+    }
+    
+    .storyadd{
+        position: absolute;
+        left: 50%;
+        color: #0047a3;
+        width: 43px;
+        bottom: 50px;
+        transform: translateX(-50%);
+        cursor: pointer;
+    }
+    .text{
+        position: absolute;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        bottom: 10px;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+    }
+}

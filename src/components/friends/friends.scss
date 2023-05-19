@@ -1,0 +1,32 @@
+
+.friendSidebar{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+
+    .friendSidebarImg{
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      margin-right: 20px;
+      object-fit: cover;
+      border: 1px solid darkgray;
+      box-shadow: #be8ddd 2px 2px;
+    }
+
+    .friendSidebarName{
+      font-weight: 500;
+      color: black;
+    }
+  }
+
+  //Responsiveness
+
+  @media only screen and (max-width:992px){
+    .friendSidebarName{
+        display: none;
+    }
+  }
+
+  

@@ -1,0 +1,187 @@
+.navbarContainer{
+    background-image: linear-gradient(#5e1f89,#714f88);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    .left{
+        flex: 3;
+
+        .logo{
+            font-size: 24px;
+            color: white;
+            margin-left: 20px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        
+          
+          .logo span {
+            display: inline-block;
+            animation: bounceAnimation 0.5s ease-in-out 7;
+            animation-delay: calc(0.1s * var(--index));
+          }
+          
+          @keyframes bounceAnimation {
+            0% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(-10px);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+    }
+    .center{
+        flex: 5;
+
+        .searchBar{
+            width: 95%;
+            height: 30px;
+            background-color: white;
+            border-radius: 30px;
+            border: 1px solid white;
+            display: flex;
+            align-items: center;
+
+            .searchIcon{
+                font-size: 20px;
+                margin-left: 10px;
+                color: gray;
+                cursor: pointer;
+            }
+
+            .barInput{
+                border: none;
+                width: 85%;
+                height: 30px;
+                margin-left: 10px;
+                &:focus{
+                    outline: #edcfff;
+                }
+            }
+        }
+    }
+    .right{
+        flex: 4;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        color: white;
+        margin-left: 1.8rem;
+
+        .navbarLink{
+            margin-left: 20px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .navbarIcons{
+            display: flex;
+            font-size: 20px;
+            gap: 25px;
+
+            .iconItem{
+                display: flex;
+                margin-right: 5px;
+                position: relative;
+                cursor: pointer;
+                
+            }
+            .iconItem:hover{
+                border-radius: 40%;
+                border: 1px solid #edcfff;
+
+            }
+
+            .iconBadge{
+                width: 16px;
+                height: 16px;
+                background-color: #c326ae;
+                position: absolute;
+                font-size: 12px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: -5px;
+                right: -5px;
+            }
+        }
+        
+        .userImage{
+            display: flex;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            border: 2px solid #edcfff;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    .navbarContainer{
+        .left{
+            flex: 2;
+            .logo{
+                font-weight: 500;
+            }
+        }
+        .center{
+            flex: 5;
+            .searchBar{
+                width: 95%;
+
+                .barInput{
+                    width: 70%;
+                }
+            }
+        }
+
+        .right{
+            .userImage{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .navbarContainer{
+        .left{
+            flex: 3;
+        }
+
+        .right{
+            .navbarLink{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 576px){
+   .navbarContainer{
+    justify-content: space-between;
+
+    .left{
+        flex: 1;
+    }
+    .center{
+        flex: 1;
+        display: none;
+        
+    }
+    .right{
+        flex: 1;
+    }
+   }
+}

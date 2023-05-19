@@ -1,0 +1,113 @@
+.sidebar{
+    flex: 2;
+    top: 50px;
+    height: calc(100vh - 50px);
+    position: sticky;
+    overflow-y: scroll;
+    background-color: #f0d9ff
+    ;
+    
+    .sidebarWrapper{
+        padding: 20px;
+        gap: 10;
+
+       
+      
+
+      .sidebarButton{
+        background-color: #5e1f5e;
+        color: white;
+        padding: 10px;
+        margin: 20px;
+        width: 150px;
+        border-radius: 5px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+      }
+
+      .sidebarHr{
+        margin: 10px 0;
+      }
+
+      .friendSidebarList{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        .friendsTitle{
+          color: #5e1f5e;
+          font-weight: 700;
+          font-size: 16px;
+          top: 10px;
+          margin-bottom: 10px;
+        }
+        
+      }
+    }
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #d3d2d2;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #6b6a6b;
+}
+
+//Responsiveness
+
+@media only screen and (max-width:992px){
+  .sidebar{
+    flex: 1;
+    .sidebarWrapper{
+      padding: 17px;
+
+      .sidebarButton{
+        display: none;
+      }
+
+      .sidebarHr{
+        display: none;
+      }
+      .friendsTitle{
+        display:none;
+      }
+    }
+  }
+
+  ::-webkit-scrollbar{
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track{
+      display: none;
+  }
+
+  ::-webkit-scrollbar-thumb{
+      display: none;
+  }
+}
+
+@media only screen and (max-width:768px){
+  .sidebar{
+    display: block;
+
+    .sidebarWrapper{
+      padding: 3px;
+      .friendsTitle{
+        display:none;
+      }
+    }
+  }
+}
+@media only screen and (max-width:576px){
+  .sidebar{
+    display: none;
+  }
+}
+

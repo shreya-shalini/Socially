@@ -1,0 +1,163 @@
+.register{
+    width: 100vw;
+    height: 100vh;
+    background-color: #faf2ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .registerWrapper{
+        width: 80%;
+        display: flex;
+
+        .RightRegister{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin-left: 30px;
+            margin-right:20px;
+            justify-content: center;
+
+            .registerLogo{
+                font-size: 60px;
+                font-weight: 800;
+                color: #5e1f5e;
+                margin-bottom: 10px;
+                cursor: pointer;
+            }
+            
+              
+              .registerLogo span {
+                display: inline-block;
+                animation: bounceAnimation 0.5s ease-in-out 7;
+                animation-delay: calc(0.1s * var(--index));
+              }
+              
+              @keyframes bounceAnimation {
+                0% {
+                  transform: translateY(0);
+                }
+                50% {
+                  transform: translateY(-10px);
+                }
+                100% {
+                  transform: translateY(0);
+                }
+              }
+              
+
+            .registerDesc{
+                font-size: 28px;
+            }
+        }
+
+        .LeftRegister{
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 0 20px;
+            justify-content: center;
+
+            .registerBox{
+                display: flex;
+                flex-direction: column;
+                background-color: white;
+                border-radius: 10px;
+                width: 100%;
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                .top{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 30px;
+                    .profileImg{
+                        display: flex;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        border: 2px solid #5e1f5e
+                    }
+
+                    .formInput{
+                        display: flex;
+                        align-items: center;
+
+                        label{
+                            display: flex;
+                            align-items: center;
+
+                            .icon{
+                                font-size: 34px;
+                                color: #333;
+                                margin-left: 10px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .bottom{
+                    .bottomBox{
+                        height: 450px;
+                        padding: 5px 40px 10px 40px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        border-radius: 10px;
+                        background-color: white;
+
+                        .registerInput{
+                            height: 50px;
+                            border-radius: 10px;
+                            padding-left: 20px;
+                            font-size: 18px;
+                            border: 1px solid gray;
+
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+
+                        .registerButton{
+                            height: 50px;
+                            width: 100%;
+                            background-color: #00875a ;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 23px;
+                            border-radius: 10px;
+                            border: none;
+                            margin-bottom: 5px;
+                            cursor: pointer;
+                        }
+                        .registerButton:hover{
+                            box-shadow: 2px 4px 10px 1px #3ecc9d;
+                            zoom: normal;
+                          }
+
+                        .loginRegisterButton{
+                            height: 50px;
+                            width: 100%;
+                            background-color: #5e1f5e;
+                            color: white;
+                            font-weight: 500;
+                            font-size: 23px;
+                            border-radius: 10px;
+                            border: none;
+                            margin-bottom: 5px;
+                            cursor: pointer;
+                        }
+                        .loginRegisterButton:hover{
+                            box-shadow: 2px 4px 10px 1px #c27ba0 ;
+                            zoom: 101%;
+                          }
+
+                    }
+                }
+            }
+
+        }
+    }
+}
